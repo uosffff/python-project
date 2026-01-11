@@ -1,0 +1,60 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "private_outputs": true,
+      "cell_execution_strategy": "setup"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "xEWFWT2qHvfo"
+      },
+      "outputs": [],
+      "source": [
+        "import numpy as np\n",
+        "s=np.array([200,450,300,260,160,750,230])\n",
+        "t=np.sum(s)\n",
+        "m=np.max(s)\n",
+        "print(f\"اجمالي مبيعات لاسبوع{t}\")\n",
+        "print(f\"اعلى مبلغ تم كسبه في الاسبوع{m}\")\n",
+        "target=2000\n",
+        "if t > target:\n",
+        " print(\"تهنينا لقد وصلت الى الهدف\")\n",
+        "else:\n",
+        " print(\"انتبه المبيعات منخفظة\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "days=[\"السبت\",\"الاحد\",\"الاثنين\",\"الثلاثاء\",\"الاربعاء\" ]\n",
+        "sales=np.array([200,400,360,260,180])\n",
+        "print(f\"toital:{sum(sales)}\")\n",
+        "print(f\"max:{max(sales)}\")\n",
+        "plt.bar(days,sales)\n",
+        "plt.show()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "sJmzhI9s4cGY"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
